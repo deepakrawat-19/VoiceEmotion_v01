@@ -1,4 +1,4 @@
-import tensorflow as tf
-import keras
-
-print(tf.__version__)
+from playsound import playsound
+print('voice playing')
+playsound('happyvoice.wav')
+print('voice stopped')

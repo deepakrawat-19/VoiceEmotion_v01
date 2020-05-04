@@ -3,15 +3,19 @@ from happyEmotion import happy_run
 from sadEmotion import  sad_run
 from angryEmotion import angry_run
 from  calmEmotion import  calm_run
+from playsound import playsound
 #from audioRecorder import  record
 
 print("Welcome to the voice emotion recognition system")
 speak("Welcome to the voice emotion recognition system")
+print("press 1 to start recording")
 speak("press 1 to start recording")
+print("press 2 to exit")
 speak("press 2 to exit")
 option=int(input())
 if option==1:
     while option == 1:
+        playsound('happyvoice.wav')
         speak('Predicting the emotion')
         #emotion=emotionPredict()
         speak('happy')

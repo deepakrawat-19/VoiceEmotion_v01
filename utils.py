@@ -23,7 +23,7 @@ def openMovieList():
 
 
 def emotionPredict():
-    data, sampling_rate = librosa.load('1outputvoice.wav')
+    data, sampling_rate = librosa.load('outputvoice.wav')
     mfccs = np.mean(librosa.feature.mfcc(y=data, sr=sampling_rate, n_mfcc=40).T, axis=0)
     x = np.expand_dims(mfccs, axis=1)
     x = np.expand_dims(x, axis=0)
